@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markJs</title>
+</head>
+<body>
+    <input type="text" id="busca"><br>
+    <p id="descricao">
+        Os nossos cursos e programas de formação são criados em conjunto com das empresas mais inovadoras do mundo, 
+        aplicando uma metodologia para que você domine as tecnologas utilizadas no mercado e 
+        também mergulhe nas novas e mais atuais tecnologias que impactarão o futuro dos negócios digitais
+    </p>
+    <script>
+        let searchField = document.getElementById('busca');
+        let descriptionObject = document.getElementById('descricao');
+        let textToSearch = descriptionObject.innerText;
+
+        function realizaBusca(busca) {
+            const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+            const ocurrences = textToSearch.match(regex);
+            descriptionObject.innerText = textToSearch.replace(regex, `<mark>${busca}</mark`)
+        }
+
+        searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value))
+
+    </script>
+</body>
+</html>

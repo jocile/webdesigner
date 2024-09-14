@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <form name="singUp" onsubmit="alert('Formulário Enviado')" autocomplete="on" method="post" action="#">
+        Nome: <input type="text" name="name" /> <br>
+        Idade: <input type="number" name="age" /> <br>
+        Senha: <input type="password" name="password" /> <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <form>
+        <label>Text:</label><input type="text" /><br>
+        <label>Number:</label><input type="number" min="0" step="5" max="99" /><br>
+        <label>Range:</label><input type="range" min="0" max="100" value="90" /><br>
+        <label>Color:</label><input type="color" /><br>
+        <label>E-mail:</label><input type="email" /><br>
+        <label>Url:</label><input type="url" /><br>
+        <label>Date:</label><input type="date" /><br>
+        <label>CheckBox</label><input type="checkbox" /><br>
+        <label>Radio</label><input type="radio" /><br>
+        <label>Hidden</label><input type="hidden" /><br>
+        <label>File</label><input type="file" multiple /><br>
+        <label>Search</label><input type="search" /><br>
+        <label>Button:</label><input type="submit" value="Enviar" /><br>
+    </form>
+    <br>
+    <form method="get">
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais Opcionais você deseja?</p>
+        <input type="checkbox" disabled name="opcional[]" value="queijo">+ queijo <br>
+        <input type="checkbox" name="opcional" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional" value="azeitona"> + azeitona <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="" value="sim"> Sim <br>
+        <input type="radio" name="" value="nao"> Não <br>
+        <p>Bebida</p>
+        <input type="radio" name="" value="suco">Suco <br>
+        <input type="radio" name="" value="refrigerante">Refrigerante <br>
+        <input type="radio" name="" value="agua">Água <br>
+        <input type="radio" name="" value="agua">Nenhum <br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+    <br>
+    <form method="get">
+        <label>Nome:</label><input type="text" name="name" /> <br>
+        <label>Idade:</label><input type="number" name="age" /> <br>
+        <label>Password:</label><input type="password" name="password" /> <br>
+
+        <button type="button">Clicavel</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <form onsubmit="" method="get">
+        <label>Nome:</label><input type="text" name="name" /><br>
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="">Selecione o cargo</option>
+            <option selected value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select>
+        <br>
+        <label>Assunto:</label><input type="text" name="subject"><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

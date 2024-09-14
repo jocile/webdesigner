@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha do HTML</title>
+    
+    <style>
+        .row {
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset {
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: gray;
+        }
+        .card1 {
+            border: solid 1px black;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            z-index: 1;
+            background-color: blueviolet;
+        }
+        .card2 {
+            border: solid 1px black;
+            width: 110px;
+            height: 110px;
+            position: absolute;
+            left: 35%;
+            top: 35%;
+            z-index: 2;
+            background-color: rgb(145, 130, 23)
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+
+    <fieldset>
+        <legend>Dados Pessoas</legend>
+        <div class="row">
+            <label>Nome:</label><input type="text"/>
+            <label>Email:</label><input type="text"/>
+        </div>
+    </fieldset>
+    <div class="row">
+        <label>Profissão:</label><input type="text"/>
+        <label>Empresa:</label><input type="text"/>
+    </div>
+    <div class="row">
+        <label>Endereço:</label><input type="text"/>
+        <label>Número:</label><input type="text"/>
+    </div>
+    <div class="row">
+        <label>Bairro:</label><input type="text"/>
+    </div>
+    <div class="row">
+        <label>Cidade/UF:</label><input type="text"/>
+    </div>
+    <div class="row">
+        <label>Celular:</label><input type="text"/>
+        <label>WhatsApp:</label><input type="text"/>
+    </div>
+    <div class="row">
+        <label>LinkedIn:</label><input type="text"/>
+        <label>GitHub:</label><input type="text"/>
+    </div>
+    <button>Limpar</button>
+    <button>Enviar Formulário</button>
+    
+    <h1>Embeds vs Iframes</h1>
+    <embed src="linkDoVideoNoProjeto.mp4" />
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/VB9EKpAD-xs?si=Rls5JoG3h7-TvISA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+    <div class="card1"></div>
+    <div class="card2"></div>
+</body>
+</html>
