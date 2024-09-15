@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Preenchimento de imagens</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        width: 200px;
+        height: 300px;
+        border: 5px solid blue;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #contain {
+        object-fit: contain;
+      }
+
+      #cover {
+        object-fit: cover;
+      }
+
+      #none {
+        object-fit: none;
+      }
+
+      #scale-down {
+        object-fit: scale-down;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Trabalhando com preenchimento de imagens</h1>
+      <p>Ajuste de objeto</p>
+      <code>object-fit: fill; (padrão)</code>
+      <figure>
+        <img src="../img/logo.png" alt="" id ="fill">
+      </figure>
+      <br>
+      <code>object-fit: contain;</code>
+      <figure>
+        <img src="../img/logo.png" alt="" id ="contain">
+      </figure>
+      <br>
+      <code>object-fit: cover;</code>
+      <figure>
+        <img src="../img/logo.png" alt="" id ="cover">
+      </figure>
+      <br>
+      <code>object-fit: none;</code>
+      <figure>
+        <img src="../img/logo.png" alt="" id ="none">
+      </figure>
+      <br>
+      <code>object-fit: scale-down;</code>
+      <figure>
+        <img src="../img/logo.png" alt="" id ="scale-down">
+      </figure>
+    </main>  
+  </body>
+</html>
