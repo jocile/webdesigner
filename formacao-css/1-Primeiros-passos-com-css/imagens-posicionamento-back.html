@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Posicionamento de imagens de background</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        width: 300px;
+        height: 300px;
+        background-image: url("../img/background-01.jpg");
+        background-size: 120px;
+        background-repeat: no-repeat;
+        border: 1px solid red;
+      }      
+
+      #position {
+        background-position: 10%;
+      }
+
+      #position-negative {
+        background-position: -10px -20px;
+      }
+
+      #position-left {
+        background-position: left 50%;
+      }
+
+      #position-right {
+        background-position: right center;
+      }
+
+      #position-center {
+        background-position: center center;
+      }
+
+      #position-top {
+        background-position: right top;
+      }
+
+      #position-bottom {
+        background-position: bottom 10px right 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Posicionamento de imagens de background</h1>
+      <code>background-position: 10%; (horizontal vertical)</code>
+      <figure id="position">     
+      </figure>
+      <br>
+      <code>background-position: -10px -20px;</code>
+      <figure id="position-negative">
+      </figure>
+      <br>
+      <code>background-position: left 50%;</code>
+      <figure id="position-left">
+      </figure>
+      <br>
+      <code>background-position: right center;</code>
+      <figure id="position-right">
+      </figure>
+      <br>
+      <code>background-position: center center;</code>
+      <figure id="position-center">
+      </figure>
+      <br>
+      <code>background-position: right top</code>
+      <figure id="position-top">
+      </figure>
+      <br>
+      <code>background-position: bottom 10px right 20px;</code>
+      <figure id="position-bottom">
+      </figure>
+      <br>
+      
+    </main>  
+  </body>
+</html>
