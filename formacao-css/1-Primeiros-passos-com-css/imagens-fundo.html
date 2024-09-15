@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Auternado o fundo dos elementos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        width: 300px;
+        height: 300px;
+      }
+      
+      #imagem {
+        background-image: url("../img/background-01.jpg");        
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      #imagem-camadas {
+        background-image: url("../img/logo.png"), url("../img/background-01.jpg");        
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      #gradiente {
+        background-image: linear-gradient(to right, red, purple, blue);        
+      }
+
+      #radial {
+        background-image: radial-gradient(circle, red, purple, blue);
+      }
+
+      #repeat {
+        background-image: repeating-linear-gradient(to top, palevioletred 0 20px, lightpink 20px 40px, lightgreen 40px 60px);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Trabalhando com imagens de fundo</h1>
+      <code>background-image: url("../img/background-01.jpg");</code>
+      <figure id="imagem"></figure>
+      <br>
+      <code>background-image: url("../img/logo.png"), url("../img/background-01.jpg"); </code>
+      <figure id="imagem-camadas"></figure>
+      <br>
+      <code>background-image: linear-gradient(to right, red, purple, blue);
+      </code>
+      <figure id="gradiente"></figure>
+      <br>
+      <code>background-image: radial-gradient(circle, red, purple, blue);</code>
+      <figure id="radial"></figure>
+      <br>
+      <code>background-image: repeating-linear-gradient(to top, palevioletred 0 20px, lightpink 20px 40px, lightgreen 40px 60px);</code>
+      <figure id="repeat"></figure>
+    </main>
+    <footer>
+      <a href="https://projects.verou.me/css3patterns/">Padrões em CSS</a>
+    </footer>
+  </body>
+</html>

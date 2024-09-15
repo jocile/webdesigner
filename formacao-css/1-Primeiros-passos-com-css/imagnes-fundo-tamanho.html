@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Dimensionando imagens</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        width: 300px;
+        height: 300px;
+        background-image: url("../img/background-01.jpg");
+      }
+
+      #cover {
+        background-size: cover;
+      }
+
+      #contain {
+        background-size: contain;
+      }
+
+      #tamanho {
+        background-size: 50%;
+      }
+
+      #exemplo-x-y {
+        background-size: 200px 100px;
+      }
+
+      #exemplo-camadas {
+        background-image: url("../img/logo.png"), url("../img/background-01.jpg");
+        background-size: 290px 95%,  cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Dimensionando imagens</h1>
+      <code>background-size: auto; (padrão tamanho original)</code>
+      <figure></figure>
+      <br>
+      <code>background-size: cover; (ocupa todo o fundo)</code>
+      <figure id="cover"></figure>
+      <br>
+      <code>background-size: contain; (redimensiona para aparecer completamente)</code>
+      <figure id="contain"></figure>
+      <br>
+      <code>background-size: 50%;(redimensiona a imagem)</code>
+      <figure id="tamanho"></figure>
+      <br>
+      <code>background-size: 200px 100px;</code>
+      <figure id="exemplo-x-y"></figure>
+      <br>
+      <code>background-image: url("../img/logo.png"), url("../img/background-01.jpg");</code><br>
+      <code>background-size: 290px 90%,  cover;</code>
+      <figure id="exemplo-camadas"></figure>
+    </main>
+  </body>
+</html>
