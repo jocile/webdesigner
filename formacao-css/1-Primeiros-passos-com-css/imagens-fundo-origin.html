@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Propriedades de boras de background</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        width: 300px;
+        height: 300px;
+        background-image: url("../img/background-01.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: 15px dashed palegreen;
+        padding: 30px;
+      }
+
+      #padding-box {
+        background-origin: padding-box;
+      }
+
+      #border-box {
+        background-origin: border-box;
+      }
+
+      #content-box {
+        background-origin: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Propriedades de bordas de background</h1>
+      <code>background-origin: padding-box;</code>
+      <figure id="padding-box"></figure>
+      <br>
+      <code>background-origin: border-box;</code>
+      <figure id="border-box"></figure>
+      <br>
+      <code>background-origin: content-box;</code>
+      <figure id="content-box"></figure>
+    </main>
+  </body>
+</html>

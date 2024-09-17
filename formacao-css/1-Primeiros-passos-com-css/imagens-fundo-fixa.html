@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Imagens de background fixas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        width: 300px;
+        height: 300px;
+        background-image: url("../img/background-01.jpg");
+        background-size: cover;
+        border: 1px solid black;
+        overflow: auto;
+      }
+
+      #fixed {
+        background-attachment: fixed;
+      }
+
+      #scroll {
+        background-attachment: scroll;
+      }
+
+      #local {
+        background-attachment: local;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Imagens de background fixas</h1>
+      <code>background-attachment: fixed;</code>
+      <figure id="fixed">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quae dignissimos labore itaque magni enim mollitia fuga doloribus fugit laudantium sunt tempore est delectus reprehenderit, harum ipsam quisquam quam atque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae aspernatur tempore reiciendis dolorum alias asperiores illo, facilis nulla beatae error molestiae! Sint blanditiis enim minus, et alias optio ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur officia, ipsum repudiandae, aliquam hic accusantium perferendis deserunt omnis quis incidunt corrupti suscipit architecto ullam aperiam. Nemo ad alias dolor!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima maiores omnis fugiat provident voluptatum quod delectus rem ad laudantium ipsam quos voluptatem hic laboriosam distinctio nesciunt aliquam, maxime exercitationem repellat?
+      </figure>
+      <br>
+      <code>background-attachment: scroll;</code>
+      <figure id="scroll">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quae dignissimos labore itaque magni enim mollitia fuga doloribus fugit laudantium sunt tempore est delectus reprehenderit, harum ipsam quisquam quam atque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae aspernatur tempore reiciendis dolorum alias asperiores illo, facilis nulla beatae error molestiae! Sint blanditiis enim minus, et alias optio ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi consequuntur officia, ipsum repudiandae, aliquam hic accusantium perferendis deserunt omnis quis incidunt corrupti suscipit architecto ullam aperiam. Nemo ad alias dolor!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea quasi numquam doloremque placeat unde, obcaecati voluptatem nobis assumenda enim odit harum inventore maxime a mollitia praesentium, perferendis fugit accusamus.
+      </figure>
+      <br>
+      <code>background-attachment: local;</code>
+      <figure id="local">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellat exercitationem recusandae omnis, perspiciatis eveniet corporis ad voluptas culpa iste id dicta minima officiis beatae tempore aut ex placeat! Enim.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore sapiente obcaecati accusamus consectetur cum labore voluptatibus facere magnam quasi doloremque reiciendis consequuntur, incidunt quisquam temporibus molestiae velit voluptatem quae illo.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea quasi numquam doloremque placeat unde, obcaecati voluptatem nobis assumenda enim odit harum inventore maxime a mollitia praesentium, perferendis fugit accusamus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quia consequuntur distinctio iure. Quae sequi doloribus laboriosam nulla fugit, soluta omnis, eaque quis animi, aliquam ad. Fugit cupiditate quasi ipsa?
+      </figure>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Propriedades de background</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    figure {
+      width: 300px;
+      height: 300px;
+      border: 15px dashed palegreen;
+      color: white;
+      padding: 30px;
+      font-size: 80PX;
+      font-weight: 900;
+      background-color: blue;
+      background-image: url("../img/background-01.jpg");
+    }
+
+    #padding-box {
+      background-clip: padding-box;
+      background-blend-mode: multiply;
+    }
+
+    #border-box {
+      background-clip: border-box;
+      background-blend-mode: screen;
+    }
+
+    #content-box {
+      background-clip: content-box;
+      background-blend-mode: overlay;
+      background-color: purple;
+    }
+
+    #darken {
+      background-clip: content-box;
+      background-blend-mode: darken;
+      background-color: orange;
+    }
+
+    #text {
+      -webkit-background-clip: text;
+      color: transparent;
+      border: 5px solid black;
+      background-clip: text;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Propriedades de background</h1>
+    <code>background-clip: padding-box;
+      background-blend-mode: multiply;
+    </code>
+    <figure id="padding-box">TRILHA DE CSS</figure>
+    <br>
+    <code>background-clip: border-box;
+      background-blend-mode: screen;
+    </code>
+    <figure id="border-box">TRILHA DE CSS</figure>
+    <br>
+    <code>background-clip: content-box;
+      background-blend-mode: overlay;
+    </code>
+    <figure id="content-box">TRILHA DE CSS</figure>
+    <br>
+    <code>background-blend-mode:darken;</code>
+    <figure id="darken">TRILHA DE CSS</figure>
+    <br>
+    <code>background-clip: text;</code>
+    <figure id="text">TRILHA DE CSS</figure>
+  </main>
+</body>
+
+</html>
