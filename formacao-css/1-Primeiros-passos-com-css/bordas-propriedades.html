@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Propriedades das bordas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+      }
+
+      section {
+        background-color: palevioletred;
+        width: 200px;
+        height: 100px;
+        border-style: solid;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      #width {
+        border-width: 5px;
+      }
+
+      #thin {
+        border-width: thin;
+        border-radius: 10px;
+      }
+
+      #medium {
+        border-width: medium;
+        border-style: dashed;
+        border-radius: 50px/100px;        
+      }
+
+      #thick {
+        border-width: thick;
+        border-style: dotted;
+        height: 200px;
+        border-radius: 50%;        
+      }
+
+      #width-x-y {
+        border-width: 10px 20px 30px 40px;
+        border-color: purple greenyellow coral blue;
+      }
+
+      #combinado {
+        border-style: dotted dashed solid double;
+        border-width: 10px;
+      }
+
+      #double {
+        border-style: double;
+        border-width: 10px;
+      }
+
+      #groove {
+        border-style: groove;
+        border-width: 10px;
+      }
+
+      #ridge {
+        border-style: ridge;
+        border-width: 10px;
+      }
+
+      #inset {
+        border-style: inset;
+        border-width: 10px;
+      }
+
+      #outset {
+        border-style: outset;
+        border-width: 10px;
+      }
+
+      #border {
+        border: 10px solid violet;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Propriedades das bordas</h1>
+      <article>
+        <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+        <ul>
+          <li>border-width</li>
+          <li>border-style</li>
+          <li>border-color</li>
+        </ul>
+        <h2>Exemplos</h2>        
+        <section id="width">
+        <code>
+          width: 200px;<br>
+          height: 100px;<br>
+          border-style: solid;
+          padding: 10px;<br>
+          border-width: 5px;
+        </code>
+        </section>
+        <br>
+        <section id="thin">
+          <code>            
+            border-width: thin;
+            (Equivalente a 1px)
+            border-radius: 10px;
+            display: flex;<br>
+            align-items: center;
+          </code>
+          </section>
+          <br>
+          <section id="medium">
+            <code>
+              border-width: medium;
+              (Equivalente a 3px)
+              border-style: dashed;
+              border-radius: 50px/100px;
+            </code>
+          </section>
+          <br>
+          <section id="thick">
+            
+            <code>
+              border-width: thick;
+              (Equivalente a 5px)
+              border-style: dotted;
+              border-radius: 50%;
+            </code>
+          </section>
+          <br>
+          <section id="width-x-y">
+            <code>
+              border-width: 10px 20px 30px 40px;<br>
+              border-color: purple greenyellow coral blue;
+            </code>
+          </section>
+          <br>
+          <section id="combinado">
+            <code>
+              border-style: dotted dashed solid double;
+            </code>
+          </section>
+          <br>
+          <section id="border">
+            <code>
+              border: 10px solid violet;
+              (Resumida)
+            </code>
+          </section>
+          <br>
+          <section id="double">
+            <code>
+              border-style: double;
+              border-width: 10px;
+            </code>
+          </section>
+          <br>
+          <section id="groove">
+            <code>
+              border-style: groove;
+            </code>
+          </section>
+          <br>
+          <section id="ridge">
+            <code>
+              border-style: ridge;
+            </code>
+          </section>
+          <br>
+          <section id="inset">
+            <code>
+              border-style: inset;
+            </code>
+          </section>
+          <br>
+          <section id="outset">
+            <code>
+              border-style: outset;
+            </code>
+          </section>
+      </article>
+    </main>
+  </body>
+</html>
