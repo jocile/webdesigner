@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Bordas com imagens</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      figure {
+        background-color: black;
+        width: 400px;
+        height: 200px;
+        border: 30px solid;
+        display: flex;
+        align-items: center;
+        color: white;
+      }
+
+      #source {
+        border-image-source: url('../img/border.png');
+      }
+
+      #gradiente {
+        border-image-source: linear-gradient(red, blue);
+      }
+
+      #slice {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: repeat;
+        border-image-slice: 13.4;
+      }
+
+      #fill {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: repeat;
+        border-image-slice: 15 fill;
+      }
+
+      #gradiente-slice {
+        border-image-source: linear-gradient(red, blue);        
+        border-image-slice: 10;
+      }
+
+      #width {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: repeat;
+        border-image-slice: 15;
+        border-image-width: 10px 20px 30px 40px;
+      }
+
+      #repeat-stretch {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: stretch;
+        border-image-slice: 15;
+      }
+
+      #reapeat-round {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: round;
+        border-image-slice: 15;
+      }
+
+      #repeat-space {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: space;
+        border-image-slice: 15;
+      }
+
+      #outset {
+        border-image-source: url('../img/border.png');
+        border-image-repeat: round;
+        border-image-slice: 15;
+        border-image-outset: 25px;
+      }
+
+      #resumido {
+        border-image:
+          url('../img/border.png')
+          15 / 10px / 15px /* slice / width / outset */
+          round /* repeat */
+        ;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Bordas com imagens</h1>
+      <article>
+        <h2>Propriedades das bordas</h2>
+        <ul>
+          <li>Border-image-source</li>
+          <li>border-image-width</li>
+          <li>border-image-repeat</li>
+          <li>border-image-outset</li>
+          <li>border-image-slice</li>
+        </ul>
+        <h2>Exemplos</h2>
+        <figure id="source">
+          <code>
+            /* Usando uma imagem na borda */<br>
+            border-image-source: url('../img/border.png');
+          </code>
+        </figure>
+        <br>
+        <figure id="gradiente">
+          <code>
+            /* Usando um gradiente */<br>
+            border-image-source: linear-gradient(red, blue);
+          </code>
+        </figure>
+        <br>
+        <figure id="slice">
+          <code>
+            /* Repetindo a imagem para preencher a borda */<br>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: repeat;<br>
+            border-image-slice: 13.4;
+          </code>
+        </figure>
+        <br>
+        <figure id="fill">
+          <code>
+            /* Preenchendo o interior com a image da borda */<br>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: repeat;<br>
+            border-image-slice: 15 fill;
+          </code>
+        </figure>
+        <br>
+        <figure id="gradiente-slice">
+          <code>
+            /* Usando cores com gradiente */<br>
+            border-image-source: linear-gradient(red, blue);<br>            
+            border-image-slice: 10;
+          </code>
+        </figure>
+        <br>
+        <figure id="width">
+          <code>
+            /* Ajustando a largura da imagem na borda */<br>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: repeat;<br>
+            border-image-slice: 15;<br>
+            border-image-width: 10px 20px 30px 40px;
+          </code>
+        </figure>
+        <br>
+        <figure id="repeat-stretch">
+          <code>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: stretch; /* estica */<br>
+            border-image-slice: 15;
+          </code>
+        </figure>
+        <br>
+        <figure id="reapeat-round">
+          <code>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: round; */ evita cortar */<br>
+            border-image-slice: 15;
+          </code>
+        </figure>
+        <br>
+        <figure id="repeat-space">
+          <code>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: space; */ajusta a imagem*/<br>
+            border-image-slice: 15;
+          </code>
+        </figure>
+        <br>
+        <figure id="outset">
+          <code>
+            border-image-source: url('../img/border.png');
+            border-image-repeat: round;<br>
+            border-image-slice: 15; <br>
+            border-image-outset: 25px; /* distância da borda */
+          </code>
+        </figure>
+        <br>
+        <figure id="resumido">
+          <code>
+            /* Resumindo as propriedades de imagem na borda */ <br>
+            border-image:
+              url('../img/border.png') <br>
+              15 / 10px / 15px /* slice / width / outset */<br> 
+              round /* repeat */ <br>
+            ; 
+          </code>
+        </figure>
+      </article>
+    </main>
+  </body>
+</html>
