@@ -7,7 +7,7 @@ var htmlCode = textareaHTML.value;
 var cssCode = textareaCSS.value;
 
 let editorHeading = document.createElement("h4");
-editorHeading.innerHTML = "Interactive editor";
+editorHeading.innerHTML = "Editor Interativo";
 document.querySelector("body").insertBefore(editorHeading, textareaCSS);
 
 function fillCode() {

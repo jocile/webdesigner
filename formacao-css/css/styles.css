@@ -25,7 +25,7 @@ body {
   display: block;
   margin-bottom: 10px;
   background-color: #f4f7f8;
-  border: none;
+  border: 1px solid;
   border-left: 6px solid #558abb;
   color: #4d4e53;
   width: 90%;
@@ -54,6 +54,7 @@ body {
   width: 90%;
   max-width: 700px;
   border: 1px solid #4d4e53;
+  border-left: 6px solid #558abb;
   border-radius: 2px;
   padding: 10px 14px 10px 10px;
   margin-bottom: 10px;
