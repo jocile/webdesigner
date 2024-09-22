@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>propriedade display</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style class="editable"></style>
+</head>
+<body>
+  <h1>Propriedade display</h1>  
+  <section class="preview">
+    <p class="exemplo inline">A propriedade display vai determinar como essas caixinhas retangulares irão se comportar quando forem exibidas na tela.</p>
+    <span class="exemplo">Exemplo inline</span>
+    <div class="exemplo block">Exemplo bloco.</div>
+    <div class="conteiner">
+      <p class="exemplo inline">Exemplo inline</p>
+      <p class="exemplo inline-block">Exemplo inline-block</p>
+      <p class="exemplo escondido">Exemplo escondido</p>
+    </div>
+  </section>
+  <textarea class="playable playable-css" style="height: 140px">
+    .exemplo {
+      background-color: palevioletred;      
+    }
+    .block {
+      display: block;
+    }
+    .conteiner {
+      border: 1px solid red;
+      text-align: center;
+    }
+    .inline {
+      display: inline;
+    }
+    .inline-block {
+      display: inline-block;
+      width: 200px;
+      height: 60px;
+      vertical-align: middle;
+    }
+    .escondido {
+      display: none;
+    }
+  </textarea>
+  <textarea class="playable playable-html" style="height: 160px">
+    <p class="exemplo inline">A propriedade display vai determinar como essas caixinhas retangulares irão se comportar quando forem exibidas na tela.</p>
+    <span class="exemplo">Exemplo inline</span>
+    <div class="exemplo block">Exemplo bloco.</div>
+    <div class="conteiner">
+      <p class="exemplo inline">Exemplo inline</p>
+      <p class="exemplo inline-block">Exemplo inline-block</p>
+      <p class="exemplo escondido">Exemplo escondido</p>
+    </div>
+  </textarea>
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Reset" />
+  </div>
+</body>
+<script src="../js/playable.js"></script>
+</html>
