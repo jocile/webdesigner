@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Posicionando os elementos na tela</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/styles.css" rel="stylesheet">
+    <style class="editable"></style>
+  </head>
+  <body>
+    <h1>Posicionando os elementos</h1>
+    <section class="preview">
+      <div id="elemento-1" class="exemplo inline">Elemento 1</div>
+      <div id="elemento-2" class="exemplo inline">Elemento 2</div>
+      <div id="elemento-3" class="exemplo inline">Elemento 3</div>
+      <hr>
+      <div id="elemento-4" class="exemplo">Elemento A</div>
+      <div id="elemento-5" class="exemplo">Elemento B</div>
+      <div id="elemento-6" class="exemplo">Elemento C</div>
+    </section>
+    <textarea class="playable playable-css" style="height: 140px">
+      .inline {display: inline-block;}
+      .exemplo {
+        width: fit-content;
+        min-height: 50px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      #elemento-1 {background-color: orange;}
+      #elemento-2 {
+        background-color: palevioletred;
+        position: relative;
+        top: -30px;
+      }
+      #elemento-3 {
+        background-color: palegreen;
+        position: sticky;
+        top: 80px;
+      }
+      #elemento-4 {
+        background-color: paleturquoise;
+        position: absolute;
+        opacity: 0.7;
+      }
+      #elemento-5 {
+        background-color: violet;
+        position: fixed;
+        right: 120px;
+        opacity: 0.5;
+      }
+      #elemento-6 {background-color: blueviolet;}      
+    </textarea>
+    <textarea class="playable playable-html" style="height: 160px">
+      <div id="elemento-1" class="exemplo inline">
+        Elemento 1 <br>
+        <code> position:static;</code>
+      </div>
+      <div id="elemento-2" class="exemplo inline">
+        Elemento 2 <br>
+        <code> position:relative;</code>
+      </div>
+      <div id="elemento-3" class="exemplo inline">
+        Elemento 3 <br>
+        <code> position:sticky;</code>
+      </div>
+      <hr>
+      <div id="elemento-4" class="exemplo">
+        Elemento A <br>
+        <code> position:absolute;</code>
+      </div>
+      <div id="elemento-5" class="exemplo">
+        Elemento B <br>
+        <code> position:fixed;</code>
+      </div>
+      <div id="elemento-6" class="exemplo">
+        Elemento C
+      </div>
+    </textarea>
+    <div class="playable-buttons">
+      <input id="reset" type="button" value="Reset" />
+    </div>
+  </body>
+  <script src="../js/playable.js"></script>
+</html>
