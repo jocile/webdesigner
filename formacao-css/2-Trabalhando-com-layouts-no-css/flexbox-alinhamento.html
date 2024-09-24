@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Alinhamento com flexbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        background: palegreen;
+        margin: 20px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .item-grow {
+        background: yellow;
+        flex-grow: 1;
+      }
+      .item {
+        background: orange;
+      }
+      #container-01 {
+        flex-direction: row;
+      }
+      #container-02 {
+        flex-direction: column;
+      }      
+      #container-03 {
+        flex-direction: column;
+        align-items: end;
+      }
+      #container-04 {
+        flex-direction: column;
+        align-items: center;
+      }      
+      #container-05 {
+        flex-direction: row;
+        align-items: center;
+      }      
+      #container-06 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content:space-around;
+      }      
+      .item-01 {
+        width: 50px;
+        height: 50px;
+      }
+      .item-02 {
+        width: 80px;
+        height: 80px;
+      }
+      .item-03 {
+        width: 40px;
+        height: 40px;
+      }      
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container-01">
+      <div class="item-grow item-01">
+        <code>flex-grow: 1;</code>
+      </div>
+      <div class="item-grow item-02">
+        <code>justify-content: space-evenly;</code>        
+      </div>
+      <div class="item-grow item-03">Item 03</div>
+    </div>
+    <div class="container" id="container-02">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">
+        <code>flex-direction: column;</code>
+      </div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container" id="container-03">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">
+        <code>align-items: end;</code>
+      </div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container" id="container-04">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">
+        <code>align-items: center;</code>
+      </div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container" id="container-05">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">
+        <code>align-items: center;</code>
+      </div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container" id="container-06">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">
+        <code>flex-wrap: wrap;</code>
+      </div>
+      <div class="item item-03">Item 03</div>
+      <div class="item item-01">Item 04</div>
+      <div class="item item-02">
+        <code>align-content: space-around;</code>
+      </div>
+      <div class="item item-03">Item 06</div>
+    </div>
+
+  </body>
+</html>
