@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Flexbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/styles.css" rel="stylesheet">
+    <style class="editable"></style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <section class="preview">
+    </section>
+    <textarea class="playable playable-css" style="height: 140px">
+      .container {
+        background: palegreen;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item {
+        background: orange;
+        margin: 10px;
+      }
+      #container-01 {
+        flex-direction: row; */ padrão */
+      }
+      #container-02 {
+        flex-direction: column;
+        height: 100px;
+      }
+      #container-03 {
+        justify-content: center;
+      }
+      #container-04 {
+        justify-content: space-between;
+      }
+      #container-05 {
+        justify-content: space-around;
+      }
+      #container-06 {
+        justify-content: space-evenly;
+      }
+      #container-07 {
+        justify-content: flex-end;
+      }
+      #container-08 {
+        justify-content: flex-start;
+      }
+      #container-09 {
+        justify-content: center;
+      }
+      #container-10 {
+        justify-content: space-evenly;
+      }
+      #container-11 {
+        justify-content: space-between;
+      }
+      #container-12 {
+        justify-content: space-around;
+      }
+      #container-13 {
+        justify-content: flex-end;
+      }
+      #container-14 {
+        justify-content: flex-start;
+      }
+    </textarea>
+    <textarea class="playable playable-html" style="height: 160px">
+      <div class="container" id="conatainer-01">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>        
+        <div class="item">Item 04</div>        
+        <div class="item">Item 05</div>        
+        <div class="item">Item 06</div>        
+        <div class="item">Item 07</div>        
+        <div class="item">Item 08</div>        
+      </div>
+      <div class="container" id="container-02">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+      </div>
+      <div class="container" id="container-03">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+      </div>
+      <div class="container" id="container-10">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+      </div>
+    </textarea>
+    <div class="playable-buttons">
+      <input id="reset" type="button" value="Reset" />
+    </div>
+  </body>
+  <script src="../js/playable.js"></script>
+</html>
