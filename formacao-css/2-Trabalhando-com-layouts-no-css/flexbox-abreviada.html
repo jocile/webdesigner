@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Flexbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        background: blueviolet;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 350px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      #container-01 {
+        flex-direction: column;
+      }
+      .item {
+        background: yellow;
+        text-align: center;
+        /* flex: 1 1 auto;  (grow shrink basis) */
+        /* flex: initial;  flex: 0 1 auto */
+        /* flex: auto;  flex: 1 1 auto */
+        flex: 1; /* flex: 1 1 0 */
+      }
+      .item-2 {
+        align-self: stretch;
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container-01">
+      <div class="item">Item 01</div>
+      <div class="item item-2">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container" id="container-02">
+      <div class="item">Curto</div>
+      <div class="item item-2">Texto médio</div>
+      <div class="item">Meu texto looooongo</div>
+    </div>
+  </body>
+</html>
