@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Exemplos de Grid-Lines</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        border: 2px solid;
+        display: grid;
+      }
+      .ex1 {
+        grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+        grid-template-rows: 50px 100px 200px;
+      }
+      .ex2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 100px);
+      }
+      .item-a {
+        text-align: center;
+        background-color: orange;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .item-b {
+        background-color: blue;
+        /* grid-column-start: 1;
+        grid-column-end: span 3; */
+        grid-column: 1 / span 3;
+        /* grid-row-start: 3;
+        grid-row-end: span 2; */
+        grid-row: span 2;
+      }
+      .item {
+        text-align: center;
+        background-color: deeppink;
+      }
+      .selected {
+        background-color: aqua;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionando elementos no Grid</h1>
+    <div class="container ex1">
+      <div class="item-a">.item-a</div>
+      <div class="item-b">.item-b</div>
+    </div>
+    <br>
+    <div class="container ex2">
+      <div class="item selected">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      
+    </div>
+  </body>
+</html>

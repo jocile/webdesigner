@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Grid - exemplos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        border: 1px solid black;
+        background: yellow;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 600px;
+      }
+      .ex1 {
+        width: 100px;
+        display: inline-grid;
+      }
+      .ex2 {
+        display: grid;
+        grid-template-columns: 20% 300px 10rem;
+        grid-template-rows: 100px 50px;
+      }
+      .ex3 {
+        display: grid;
+        grid-template-columns: max-content auto auto;
+      }
+      .ex4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+      }
+      .ex5 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, auto));
+      }
+      .item {
+        border: 1px solid black;
+      }
+      .item-01 {
+        background: palevioletred;
+      }
+      .item-02 {
+        background: cornflowerblue;
+      }
+      .item-03 {
+        background: palegreen;
+      }
+      .item-04 {
+        background: orange;
+      }
+      .item-05 {
+        background: cadetblue;
+      }
+      .item-06 {
+        background: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container ex1">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container ex1">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container ex2">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+      <div class="item item-04">Item 04</div>
+      <div class="item item-05">Item 05</div>
+      <div class="item item-06">Item 06</div>
+    </div>
+    <div class="container ex3">
+      <div class="item item-01">Trilha de CSS</div>
+      <div class="item item-02">02</div>
+      <div class="item item-03">03</div>
+      <div class="item item-04">04 Texto Grande</div>
+      <div class="item item-05">05</div>
+      <div class="item item-06">06</div>
+    </div>
+    <div class="container ex4">
+      <div class="item item-01">Trilha de CSS</div>
+      <div class="item item-02">02</div>
+      <div class="item item-03">03</div>
+      <div class="item item-04">04 Texto Grande</div>
+      <div class="item item-05">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati porro blanditiis repudiandae? Laborum optio repellendus hic asperiores numquam voluptas illum aperiam inventore alias voluptatibus nihil, sunt placeat. Quos, reprehenderit consequuntur.
+      </div>
+      <div class="item item-06">06</div>
+      <div class="item item-06">07</div>
+    </div>
+    <div class="container ex5">
+      <div class="item item-01">Trilha de CSS</div>
+      <div class="item item-02">02</div>
+      <div class="item item-03">03</div>
+      <div class="item item-04">04 Texto Grande</div>
+      <div class="item item-05">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati porro blanditiis repudiandae? Laborum optio repellendus hic asperiores numquam voluptas illum aperiam inventore alias voluptatibus nihil, sunt placeat. Quos, reprehenderit consequuntur.
+      </div>
+      <div class="item item-06">06</div>
+      <div class="item item-06">07</div>
+    </div>
+  </body>
+</html>
