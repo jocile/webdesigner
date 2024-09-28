@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas:
+        "header header header header" 
+        "main main . sidebar" 
+        "footer footer footer footer";
+        /* grid-template: repeat(3, 100px) / repeat(4, 1fr); */
+      }
+      .container {
+        border: 2px solid;
+        display: grid;
+      }
+      header {
+        background-color: orange;
+        grid-area: header;
+      }
+      main {
+        background-color: deepskyblue;
+        grid-area: main;
+      }
+      aside {
+        background-color: lightcoral;
+        grid-area: sidebar;
+      }
+      footer {
+        background-color: yellowgreen;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      header
+    </header>
+    <main>
+      main
+    </main>
+    <aside>
+      sidebar
+    </aside>
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>

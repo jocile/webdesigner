@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        display: grid;
+        /* 
+        grid-auto-flow: row;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-columns: repeat(4, 1fr);
+        grid: autoflow repeat(3, 200px) / repeat(4, 1fr); (grid abreviado)
+        grid-template-areas:
+        "header header header header" 
+        "main main . sidebar" 
+        "footer footer footer footer"; */
+        /* grid-template: repeat(3, 100px) / repeat(4, 1fr); */
+        grid: 
+        "header header header header" 100px 
+        "main main . sidebar" 300px 
+        "footer footer footer footer" 100px
+        / auto 3fr 1fr 1fr;
+        /* row-gap: 10px;
+        column-gap: 20px; */
+        gap: 10px 20px;
+      }
+      .container {
+        border: 2px solid;
+        /* display: grid; */
+      }
+      header {
+        background-color: orange;
+        grid-area: header;
+      }
+      main {
+        background-color: deepskyblue;
+        grid-area: main;
+      }
+      aside {
+        background-color: lightcoral;
+        grid-area: sidebar;
+      }
+      footer {
+        background-color: yellowgreen;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      header
+    </header>
+    <main>
+      main
+    </main>
+    <aside>
+      sidebar
+    </aside>
+    <footer>
+      footer
+    </footer>
+  </body>
+</html>
