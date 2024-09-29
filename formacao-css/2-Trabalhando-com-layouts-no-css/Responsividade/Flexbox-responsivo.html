@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Responsividade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: lightblue;
+        padding: 60px;
+        text-align: center;
+      }
+      header h2 {
+        font-size: 1rem;
+        font-weight: normal;
+      }
+      main {
+        padding: 30px;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+      }
+      h3 {
+        text-transform: uppercase;
+      }
+      .details {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .card {
+        background-color: lightblue;
+        padding: 16px;
+        border-radius: 4px;
+      }
+      .image-card {
+        background-color: lightblue;
+        border: 1px solid #e2e2e2;
+        padding: 10px;
+        flex-basis: 200px;
+      }
+      .image-card img {
+        width: 100%;        
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Layouts flexíveis</h1>
+      <h2>Exemplos de layouts flexíveis usando flexbox</h2>
+    </header>
+    <main>
+      <section>
+        <h3>Saiba mais</h3>
+        <div class="details">
+          <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae officia rerum aut eaque temporibus repellendus fugiat laborum, commodi labore, qui adipisci voluptatibus ex, distinctio similique molestiae eos eligendi omnis.
+          </div>
+          <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae officia rerum aut eaque temporibus repellendus fugiat laborum, commodi labore, qui adipisci voluptatibus ex, distinctio similique molestiae eos eligendi omnis.
+          </div>
+          <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae officia rerum aut eaque temporibus repellendus fugiat laborum, commodi labore, qui adipisci voluptatibus ex, distinctio similique molestiae eos eligendi omnis.
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Galeria de imagens</h3>
+        <div class="gallery">
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+          <div class="image-card">
+            <img src="https://picsum.photos/300" alt="Imagem aleatória">
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
