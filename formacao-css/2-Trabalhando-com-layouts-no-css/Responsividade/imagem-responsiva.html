@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Imagem responsiva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .image-container {
+        border: 2px solid red;
+      }
+      .image-background {
+        height: 500px;
+        width: 100%;
+        background-image: url('https://picsum.photos/300');
+      }
+      img {
+        max-width: 100%;
+      }
+      @media screen and (max-width: 690px) {
+        .image-background {
+          background-image: url('https://picsum.photos/200');
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <figure class="image-container">
+      <img src="https://picsum.photos/300" alt="Imagem aleatória">
+    </figure>
+    <code>background-image</code>
+    <figure class="image-container image-background"></figure>
+
+    <picture>
+      <source srcset="https://picsum.photos/200" media="(max-width: 680px)">
+      <source srcset="https://picsum.photos/300">
+      <img src="https://picsum.photos/300" alt="Imagem aleatória">
+    </picture>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, provident commodi ab quaerat repellendus saepe. Aut libero obcaecati doloribus, fugiat soluta iste impedit blanditiis sint, ea qui atque. Eveniet, voluptates?
+    </p>
+  </body>
+</html>
