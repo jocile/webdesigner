@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-elementos</title>
+  <style>
+    code {
+      background-color: lightgreen;
+    }
+    p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: red;
+      background-color: lightblue;
+    }
+    p::first-line {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: blue;
+      background-color: lightblue;
+    }
+    p::selection {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo-elementos</h1>
+  <p>Usado para adicionar elementos extras na página</p>
+  <p>Identificado por <code>::palavra-chave</code></p>
+  <h2>Pseudo-elemento - <code>::first-letter</code></h2>
+  <p>Seleciona a primeira letra da primeira linha</p>
+  <p>Propriedades disponíveis:</p>
+  <ul>
+    <li><code>color</code></li>
+    <li><code>background</code></li>
+    <li><code>margin</code></li>
+    <li><code>padding</code></li>
+    <li><code>border</code></li>
+    <li><code>font</code></li>
+    <li>Propriedades de texto</li>
+  </ul>
+  <h2>Pseudo-elemento - <code>::first-line</code></h2>
+  <p>Seleciona a primeira linha</p>
+  <p>Propriedades disponíveis:</p>
+  <ul>
+    <li><code>color</code></li>
+    <li><code>background</code></li>
+    <li><code>font</code></li>
+    <li>Propriedades de texto</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut maxime id nostrum nisi exercitationem quos unde eveniet! Voluptates cum excepturi saepe esse. Possimus, molestias non at repellat nostrum dicta.</p>
+</body>
+</html>
