@@ -23,12 +23,39 @@
     p::selection {
       background-color: lightgreen;
     }
+    summary::marker {
+      content: "➜";
+      color: red;
+    }
+    li::marker {
+      content: "†";
+      color: blueviolet;
+    }
+    input::placeholder {
+      color: lightcoral;
+    }
+    .exemplo::selection {
+      background-color: aquamarine;
+      color: blue;
+    }
+    ::selection {
+      background-color: palevioletred;
+      color: white;
+    }
+    
+    video {
+      width: 100%;      
+    }
+    video::backdrop {
+      background: blue;
+    }
   </style>
 </head>
 <body>
   <h1>Pseudo-elementos</h1>
   <p>Usado para adicionar elementos extras na página</p>
   <p>Identificado por <code>::palavra-chave</code></p>
+  <hr>
   <h2>Pseudo-elemento - <code>::first-letter</code></h2>
   <p>Seleciona a primeira letra da primeira linha</p>
   <p>Propriedades disponíveis:</p>
@@ -41,6 +68,7 @@
     <li><code>font</code></li>
     <li>Propriedades de texto</li>
   </ul>
+  <hr>
   <h2>Pseudo-elemento - <code>::first-line</code></h2>
   <p>Seleciona a primeira linha</p>
   <p>Propriedades disponíveis:</p>
@@ -51,5 +79,57 @@
     <li>Propriedades de texto</li>
     </ul>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut maxime id nostrum nisi exercitationem quos unde eveniet! Voluptates cum excepturi saepe esse. Possimus, molestias non at repellat nostrum dicta.</p>
+    <hr>
+    <h2>Pseudo-elemento - <code>::marker</code></h2>
+    <p>Estiliza os topicos ou números do marcador de uma lista.</p>
+    <details>
+      <summary>Propriedades aceitas:</summary>
+    </details>
+    <ul>
+      <li>color</li>
+      <li>content</li>
+      <li>white-space</li>
+      <li>font</li>
+      <li>animation</li>
+      <li>transition</li>
+    </ul>
+    <hr>
+    <h2>Pseudo-elemento - <code>::placeholder</code></h2>
+    <p>Coloca uma dica para ajudar no preenchimento de um campo de formulário</p>
+    <details>
+      <summary>Propriedades aceitas:</summary>
+    </details>
+    <ul>
+      <li>color</li>
+      <li>font</li>
+      <li>background</li>
+      <li>text</li>
+    </ul>
+    <p>Exemplo:</p>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" placeholder="Ex: Fulano de Tal">
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" placeholder="Mínimo 8 caracteres">
+    <hr>
+    <h2>Pseudo-elemento - <code>::selection</code></h2>
+    <p>Estiliza o texto selecionado pelo usuário</p>
+    <details>
+      <summary>Propriedades aceitas:</summary>
+    </details>
+    <ul>
+      <li>color</li>
+      <li>background</li>
+      <li>text</li>
+    </ul>
+    <p>Exemplo:</p>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut maxime id nostrum nisi exercitationem quos unde eveniet! Voluptates cum excepturi saepe esse. Possimus, molestias non at repellat nostrum dicta.</p>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut maxime id nostrum nisi exercitationem quos unde eveniet! Voluptates cum excepturi saepe esse. Possimus, molestias non at repellat nostrum dicta.</p>
+    
+    <hr>
+    <h2>Pseudo-elemento - <code>::backdrop</code></h2>
+    <p>Estiliza o plano de fundo de um elemento em modo fullscreen</p>
+    <video controls>
+      <source src="./assets/astronaut-working.mp4">
+    </video>
 </body>
 </html>
