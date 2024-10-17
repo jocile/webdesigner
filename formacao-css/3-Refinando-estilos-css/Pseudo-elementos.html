@@ -41,13 +41,42 @@
     ::selection {
       background-color: palevioletred;
       color: white;
-    }
-    
+    }    
     video {
       width: 100%;      
     }
     video::backdrop {
       background: blue;
+    }
+    input::file-selector-button {
+      border: 2px solid darkblue;
+      background-color: #6c5ce7;
+      color: white;
+      padding: 12px;
+      border-radius: 4px;
+    }
+    p::before {
+      content: "👉";
+    }
+    p::after {
+      content: "👈";
+    }
+    .card-image {
+      width: 300px;
+      height: 300px;
+      border: 1px solid gray;
+      border-radius: 8px;
+      background: url('https://picsum.photos/200');
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-image::before {
+      content: "👉";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent, rgb(255, 0, 140));
     }
   </style>
 </head>
@@ -131,5 +160,17 @@
     <video controls>
       <source src="./assets/astronaut-working.mp4">
     </video>
+    <hr>
+    <h2>Pseudo-elemento - <code>::file-selector-button</code></h2>
+    <p>Estiliza o botão de seleção de arquivo</p>
+    <form>
+      <label for="fileupload">Upload de arquivos</label>
+      <input type="file" name="fileupload">
+    </form>
+    <hr>
+    <br>
+    <h2>Card image com Pseudo-elemento <code>::before</code></h2>
+    <p>Estiliza elementos na div</p>
+    <div class="card-image"></div>
 </body>
 </html>
