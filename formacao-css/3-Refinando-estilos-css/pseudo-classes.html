@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Pseudo-classes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      button {
+        background-color: palevioletred;
+        border: none;
+        padding: 8px 14px;
+        color: white;
+      }
+      button:hover {
+        background-color: palegreen;
+        color: darkgreen;
+        border: 1px solid darkgreen;
+        cursor: pointer;
+      }
+      .container {
+        width: 100px;
+        height: 100px;
+        background-color: palegoldenrod;
+        margin-top: 30px;
+      }
+      .container:hover {
+        background: url('https://picsum.photos/100');
+        background-size: cover;
+      }
+      .container button:hover {
+        background-color: purple;
+        color: yellow;
+        border-color: yellow;
+      }
+      button:active {
+        background-color: purple;
+        color: white;
+      }
+      a:active {
+        background-color: pink;
+        color: black;
+      }
+      p:active {
+        background-color: greenyellow;
+      }
+      label {
+        display: block;
+        margin: 12px;
+        font-size: 1.5rem;
+      }
+      input, select {
+        font-size: 1.5rem;
+      }
+      input:focus {
+        outline: 2px dashed blue;
+      }
+      select:focus {
+        background-color: yellow;
+      }
+      button:focus-visible {
+        outline: 3px  solid red;
+        outline-offset: 2px;
+        background-color: palevioletred;
+        color: white;
+      }
+      label:focus-within {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-classes</h1>
+    <p>Usado para selecionar elementos com base em um estado</p>
+    <p>Identificado por <code>:palavra-chave</code></p>
+    <hr>
+    <h2>Pseudo-classe - <code>:hover</code></h2>
+    <p>Usado para selecionar elementos quando o usuário passa o mouse por cima.</p>
+    <p>Exemplo:</p>    
+    <button>Entrar em contato</button>
+    <div class="container">
+      <button>Botão 2</button>
+    </div>
+    <hr>
+    <h2>Pseudo-classe - <code>:active</code></h2>
+    <p>Usado para selecionar elementos quando o usuário clica no elemento.</p>
+    <p>Exemplo: [clique aqui!]</p>
+    <button class="botao">Entrar em contato</button>
+    <a href="https://jocile.com">Site: jocile.com</a>
+    <hr>
+    <h2>Pseudo-classe - <code>:focus, :focus-within e :focus-visible</code></h2>
+    <p>Usado para selecionar elementos quando o usuário seleciona o elemento, ou usa a tecla <code>"tab"</code>.</p>
+    <p>Exemplo:</p>
+    <form>
+      <p>Faça seu pedido! Escolha o sabor do sorvete:</p>
+      <label>Nome completo:
+        <input type="text" name="nome" placeholder="Ex: Fulano de Tal">
+      </label>
+      <label>Sabor do sorvete:
+        <select name="sabor">
+          <option value="chocolate">Chocolate</option>
+          <option value="morango">Morango</option>
+          <option value="abacaxi">Abacaxi</option>
+        </select>
+      </label>
+      <button>Finalizar pedido</button>
+    </form>
+  </body>
+</html>
