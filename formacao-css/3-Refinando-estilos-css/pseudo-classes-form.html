@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Pseudo-classes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    form {
+      border: 1px solid black;
+      width: 310px;
+      padding: 10px;
+      margin: 16px;
+    }
+    input {
+      accent-color: red;
+    }
+    input:placeholder-shown {
+      border-color: royalblue;
+      background-color: royalblue;
+    }
+    input:placeholder-shown::placeholder {
+      color: white;
+    }
+    input:checked {
+      box-shadow: 0 0 5px 2px purple;
+    }
+    input[type="checkbox"]:checked + label {
+      color: red;
+      text-decoration: line-through;
+    }
+    input[type="radio"] {
+      accent-color: blue;
+    }
+    input[type="radio"]:checked + label {
+      color: blue;
+    }
+    option:checked {
+      color: red;
+      font-weight: bold;
+    }
+    progress:indeterminate {
+      accent-color: red;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>Pseudo-classes</h1>
+  <h2><code>:placeholder-shown</code></h2>
+  <p>Usado para customizar o placeholder.</p>
+  <p>Exemplo:</p>
+  <form>
+    <label>Nome completo:
+    </label>
+    <input type="text" name="nome">
+    <hr>
+    <label>E-mail:
+    </label>
+    <input type="email" name="email" placeholder="Ex: fulano@exemplo.com">
+    <hr>
+    <label>Sua idade:
+      <input type="number" name="idade" value="18" placeholder="Você de ter 18 ou mais">
+    </label>
+  </form>
+  <hr>
+  <h2>Pseudo-classe: <code>:checked</code></h2>
+  <p>Usado para customizar o elementos quando o usuário selecionar.</p>
+  <p>Exemplo:</p>
+
+  <div>
+    <input type="checkbox" name="task-01">
+    <label for="checkbox">Tarefa 01</label>
+  </div>
+  <div>
+    <input type="checkbox" name="task-02">
+    <label for="checkbox">Tarefa 02</label>
+  </div>
+  <div>
+    <input type="checkbox" name="task-03">
+    <label for="checkbox">
+      Tarefa 03
+    </label>
+  </div>
+  <div>
+    <input type="checkbox" name="task-04">
+    <label for="checkbox">
+      Tarefa 04
+    </label>
+  </div>
+  <div>
+    <input type="checkbox" name="task-05">
+    <label for="checkbox">
+      Tarefa 05
+    </label>
+  </div>
+  <hr>
+  <input type="radio" name="genero">
+  <label for="genero">Masculino</label>
+  <input type="radio" name="genero">
+  <label for="genero">Feminino</label>
+  <hr>
+  <select name="sabor">
+    <option value="chocolate">Chocolate</option>
+    <option value="menta">Menta</option>
+    <option value="morango">Morango</option>
+  </select>
+  <hr>
+  <h2>Pseudo-classe: <code>:indeterminate</code></h2>
+  <p>Barra de progresso com valor determinado:</p>
+  <progress value="50" max="100"></progress>
+  <p>Barra de progresso indeterminada:</p>
+  <progress></progress>
+  <hr>
+</body>
+
+</html>

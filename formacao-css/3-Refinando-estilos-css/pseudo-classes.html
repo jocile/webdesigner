@@ -67,6 +67,28 @@
         font-weight: bold;
         color: red;
       }
+      h2:target {
+        background-color: gold;
+      }
+      h2:target::before {
+        content: "✅";
+        margin-right: 10px;
+      }
+      button:disabled {
+        background-color: lightgray;
+        color: black;
+      }
+      button:enabled {
+        background-color: palevioletred;
+        color: white;
+      }
+      .exemplo:link {
+        color: limegreen;
+        background-color: black;
+      }
+      .exemplo:visited {
+        color: yellow;
+      }
     </style>
   </head>
   <body>
@@ -74,7 +96,7 @@
     <p>Usado para selecionar elementos com base em um estado</p>
     <p>Identificado por <code>:palavra-chave</code></p>
     <hr>
-    <h2>Pseudo-classe - <code>:hover</code></h2>
+    <h2 id="hover">Pseudo-classe - <code>:hover</code></h2>
     <p>Usado para selecionar elementos quando o usuário passa o mouse por cima.</p>
     <p>Exemplo:</p>    
     <button>Entrar em contato</button>
@@ -82,7 +104,7 @@
       <button>Botão 2</button>
     </div>
     <hr>
-    <h2>Pseudo-classe - <code>:active</code></h2>
+    <h2 id="active">Pseudo-classe - <code>:active</code></h2>
     <p>Usado para selecionar elementos quando o usuário clica no elemento.</p>
     <p>Exemplo: [clique aqui!]</p>
     <button class="botao">Entrar em contato</button>
@@ -105,5 +127,41 @@
       </label>
       <button>Finalizar pedido</button>
     </form>
+    <hr>
+    <h2>Pseudo-classe- <code>:target</code></h2>
+    <p>Usado para selecionar elementos quando o usuário clica no elemento.</p>
+    <p>Exemplo:</p>     
+    <h3>Tabela de conteúdo</h3>
+    <ol>
+      <li><a href="#hover">Pular para a pseudo-classe hover.</a></li>
+      <li><a href="#active">Pular para a pseudo-classe active.</a></li>
+      <li>
+        <a href="#nowhere">
+          <span>Este link não leva a lugar nenhum!</span>
+        </a>
+      </li>
+    </ol>
+    <h2>Pseudo-classe <code>:enable e :disable</code></h2>
+    <p>Usado para selecionar elementos quando o usuário clica no elemento.</p>
+    <p>Exemplo:</p>
+    <form>
+      <label>
+        <input type="checkbox" name="checkbox" checked>
+        Aceito os termos de uso
+      </label>
+      <button>Botao habilitado</button>
+      <button disabled>Botao desabilitado</button>
+    </form>
+    <hr>
+    <h2>Pseudo-classe <code>:link</code></h2>
+    <p>Usado para customizar links.</p>
+        <p>Exemplo:</p>
+    <a href="https://jocile.com" class="exemplo">Site: jocile.com</a>
+    <hr>
+    <h2>Pseudo-classe <code>:visited</code></h2>
+    <p>Usado para customizar links já clicados.</p>
+    <p>Exemplo:</p>
+    <a href="https://jocile.com" class="exemplo">Site: jocile.com</a>
+    <hr>    
   </body>
 </html>
