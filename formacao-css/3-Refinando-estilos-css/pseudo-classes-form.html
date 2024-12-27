@@ -8,12 +8,16 @@
   <style>
     form {
       border: 1px solid black;
+      border-radius: 4px;
       width: 310px;
-      padding: 10px;
-      margin: 16px;
+      padding: 40px;
+      margin: auto;
+      background-color: rgb(247, 247, 247);
     }
     input {
       accent-color: red;
+      padding: 4px 14px;
+      border-style: solid;
     }
     input:placeholder-shown {
       border-color: royalblue;
@@ -35,12 +39,58 @@
     input[type="radio"]:checked + label {
       color: blue;
     }
+    input:valid {
+      border: 1px solid green;
+      color: green;
+    }
+    input:invalid {
+      border: 1px solid red;
+      color: red;
+    }
+    input:valid + span {
+      color: green;
+    }
+    input:invalid + span {
+      display: block;
+    }
+    input:invalid + .error {
+      display: block;
+    }
+    input:in-range {
+      background-color: palegreen;
+    }
+    input:out-of-range {
+      background-color: orangered;
+      color: white;
+    }
+    input:required {
+      border-color: purple;
+    }
+    input:optional {
+      border-color: palevioletred
+    }
+    input:-webkit-autofill {
+      border: 2px solid red;
+    }
     option:checked {
       color: red;
       font-weight: bold;
     }
     progress:indeterminate {
       accent-color: red;
+    }
+    form label, form button {
+      display: block;
+      margin-top: 12px;
+    }
+    form h3 {
+      margin: 0
+    }
+    .error {
+      color: red;
+      font-size: 0.8rem;
+      display: none;
+      margin-top: 4px;
     }
     
   </style>
@@ -113,6 +163,72 @@
   <p>Barra de progresso indeterminada:</p>
   <progress></progress>
   <hr>
+
+  <h2>Pseudo-classes: <code>:invalid, :valid, :in-range e :out-of-range</code></h2>
+  <form>
+    <h3>Faça sua compra</h3>
+    <label for="email" >E-mail:</label>
+    <input type="email" name="email" required>
+    <span class="error">E-mail inválido!</span>
+
+    <label for="codigo-produto">Código do produto:</label>
+    <input 
+    type="number" 
+    name="codigo-produto" 
+    min="1000"
+    max="2000"
+    required
+    >
+    <span class="error">Código inválido!</span>
+
+    <label for="cupom">Cupom de desconto:</label>
+    <input 
+    type="text" 
+    name="cupom" 
+    pattern="[a-z]+"
+    >
+    <span class="error">Valor inválido</span>
+
+    <label for="data-nascimento">Data de nascimento:</label>
+    <input
+    type="date"
+    name="data-nascimento"
+    min="1900-01-01"
+    max="2024-12-31"
+    required
+    >
+    <span class="error">Data inválida!</span>
+
+    <label for="quantidade">Quantidade:</label>
+    <input
+    type="number"
+    name="quantidade"
+    min="1"
+    max="10"
+    >
+    <span class="error">Quantidade inválida!</span>
+
+    <label>
+      <input type="checkbox" name="aceito-termos">
+      <span>Li e aceito os termos</span>
+    </label>
+
+    <button type="submit">Comprar</button>
+  </form>
+
+  <hr>
+  <h2>Pseudo-classes: <code>:autofill e :-webkit-autofill</code></h2>
+  <p>Usado para customizar o elemento quando o usuário preenche o campo.</p>
+  <p>Exemplo:</p>
+  <form>
+    <h3>Login</h3>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" required>
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" required>
+    <button type="submit">Entrar</button>
+  </form>
+
 </body>
 
 </html>
