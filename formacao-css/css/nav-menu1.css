@@ -1,13 +1,33 @@
 @import url('./reset.css');
 
+#estudos-webdesigner {
+  text-align: center;
+  color: #1976d2;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+nav {
+      /* grid-area: menu; */
+      background-color: #1976d2;
+      color: #fff;
+      padding: 24px 12px;
+      margin: 5px;
+      border-radius: 0 0 12px 12px;
+      /* min-width: 80px; */
+      font-size: 1.1rem;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
+    }
+
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
 }
 nav ul li a {
   padding: 10px 15px;
-  color: blue;
+  color: #02fdfd;
   text-decoration: none;
   border-radius: 15px 0;
 }
